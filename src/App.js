@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar>          
           <Typography variant="h6">
-            Personal Trainer
-          </Typography>
+             Personal Trainer
+          </Typography>            
         </Toolbar>
       </AppBar>
       <BrowserRouter>
