@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import Customers from './Components/Customers';
 import Trainings from './Components/Trainings';
+import Calendar from './Components/Calendar';
 
 function App() {
   return (
@@ -21,10 +22,12 @@ function App() {
         <div>
           <Link to="/Customers">Customers</Link>{' '}
           <Link to="/Trainings">Trainings</Link>{' '}
+          <Link to="/Calendar">Calendar</Link>{' '}
           <Switch>
             <Route exact path="/" component={Customers}/>
             <Route path="/Customers" component={Customers}/>
             <Route path="/Trainings" component={Trainings}/>
+            <Route path="/Calendar" component={Calendar}/>
             <Route render={() =><h1>Page not found</h1>}/>
         </Switch>
         </div>
